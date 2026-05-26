@@ -1,0 +1,122 @@
+{
+  "format_version": 1,
+  "platform": "Linux-7.0.10-1-cachyos-x86_64-with-glibc2.43",
+  "openscad": "/opt/openscad-snapshot-appimage/openscad.AppImage",
+  "openscad_version": "OpenSCAD version 2026.02.19",
+  "export_args": [
+    "--enable=predictible-output",
+    "--render",
+    "--export-format",
+    "binstl",
+    "--quiet",
+    "--summary",
+    "time"
+  ],
+  "cases": {
+    "tests/data/scad/3D/features/union-tests.scad": {
+      "ok": true,
+      "exit_code": 0,
+      "wall": {
+        "min_ms": 93.26893099932931,
+        "median_ms": 94.29827050007589,
+        "max_ms": 95.32761000082246,
+        "mean_ms": 94.29827050007589
+      },
+      "runs": 2,
+      "render_ms": 6,
+      "deterministic": true,
+      "sha256": "579c124078ae779a62fab93eeae68c11d5823c4b3f35d62913da527096e358cf",
+      "stl_bytes": 7784
+    },
+    "tests/data/scad/3D/features/difference-tests.scad": {
+      "ok": true,
+      "exit_code": 0,
+      "wall": {
+        "min_ms": 93.86654800073302,
+        "median_ms": 96.14526750101504,
+        "max_ms": 98.42398700129706,
+        "mean_ms": 96.14526750101504
+      },
+      "runs": 2,
+      "render_ms": 7,
+      "deterministic": true,
+      "sha256": "a6b6b16e798332f5ecd90198200ac123270779aa1bc42305aa65b7950a5dcbd6",
+      "stl_bytes": 21184
+    },
+    "tests/data/scad/3D/features/intersection-tests.scad": {
+      "ok": true,
+      "exit_code": 0,
+      "wall": {
+        "min_ms": 91.59195400025055,
+        "median_ms": 97.59216349993949,
+        "max_ms": 103.59237299962842,
+        "mean_ms": 97.59216349993949
+      },
+      "runs": 2,
+      "render_ms": 9,
+      "deterministic": true,
+      "sha256": "2c79e08701d0617c240b31f73e18c778463179cb9320fea873f5cd5c73dd4aa4",
+      "stl_bytes": 14584
+    },
+    "tests/data/scad/3D/features/hull3-tests.scad": {
+      "ok": true,
+      "exit_code": 0,
+      "wall": {
+        "min_ms": 103.6019880011736,
+        "median_ms": 104.17810250055481,
+        "max_ms": 104.75421699993603,
+        "mean_ms": 104.17810250055481
+      },
+      "runs": 2,
+      "render_ms": 8,
+      "deterministic": true,
+      "sha256": "3ee7a57770850c573a7472eb35a389c4afc498ad7973157e5078d0d33631cd5f",
+      "stl_bytes": 19284
+    },
+    "tests/data/scad/3D/features/rotate_extrude-tests.scad": {
+      "ok": true,
+      "exit_code": 0,
+      "wall": {
+        "min_ms": 110.82958400038478,
+        "median_ms": 115.48623800081259,
+        "max_ms": 120.1428920012404,
+        "mean_ms": 115.48623800081259
+      },
+      "runs": 2,
+      "render_ms": 18,
+      "deterministic": true,
+      "sha256": "3863cd654fb2a227a994dbafb777d07a847fb0a93033ba895e5ef221b63a2364",
+      "stl_bytes": 293384
+    },
+    "tests/data/scad/3D/features/linear_extrude-tests.scad": {
+      "ok": true,
+      "exit_code": 0,
+      "wall": {
+        "min_ms": 107.4853849986539,
+        "median_ms": 108.80672349958331,
+        "max_ms": 110.12806200051273,
+        "mean_ms": 108.80672349958331
+      },
+      "runs": 2,
+      "render_ms": 9,
+      "deterministic": true,
+      "sha256": "748bda7a1d755854d94899eac811da900419359de3760d762075c32204fe1256",
+      "stl_bytes": 75884
+    },
+    "examples/Basics/logo.scad": {
+      "ok": true,
+      "exit_code": 0,
+      "wall": {
+        "min_ms": 129.0795730001264,
+        "median_ms": 131.35372049964644,
+        "max_ms": 133.62786799916648,
+        "mean_ms": 131.35372049964644
+      },
+      "runs": 2,
+      "render_ms": 36,
+      "deterministic": true,
+      "sha256": "23e1b8263afd2de19cba8c885aaf6f93600aaa325425d0c43f02044961f2287b",
+      "stl_bytes": 369284
+    }
+  }
+}

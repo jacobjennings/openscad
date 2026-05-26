@@ -1,0 +1,8 @@
+# Small default corpus for quick iteration (paths relative to repo root).
+tests/data/scad/3D/features/union-tests.scad
+tests/data/scad/3D/features/difference-tests.scad
+tests/data/scad/3D/features/intersection-tests.scad
+tests/data/scad/3D/features/hull3-tests.scad
+tests/data/scad/3D/features/rotate_extrude-tests.scad
+tests/data/scad/3D/features/linear_extrude-tests.scad
+examples/Basics/logo.scad

@@ -1,0 +1,8 @@
+results/
+profiles/
+__pycache__/
+*.pyc
+*.stl
+*.off
+*.3mf
+*.perf.data
