@@ -1,5 +1,7 @@
 # OpenSCAD performance benchmarks
 
+> **AI agents:** use the step-by-step improve loop in [`../AGENTS.md`](../AGENTS.md).
+
 Batch timing and **bit-identical** export checks for the compile → geometry → export path used by headless validation (e.g. LoRA training loops that render generated `.scad` to STL).
 
 ## Pipeline (what is being measured)
@@ -116,16 +118,12 @@ benchmarks/results/runs/<timestamp>/
 
 | `--profile` | Behavior |
 |-------------|----------|
-| `auto` (cycle default) | `perf stat -j` if `perf` is on PATH, else psutil CPU/RSS |
-| `psutil` | CPU time + peak RSS per case |
-| `stat` | Require `perf stat` (install `perf` package on Arch) |
+| `auto` (cycle default) | `perf stat -j` if `perf` is on PATH, else child CPU/RSS via `getrusage` |
+| `psutil` | Same as `auto` fallback: CPU time + peak RSS per case |
+| `stat` | Require `perf stat` |
 | `record` | `perf record -g` on first repeat only (slow; produces `perf.data`) |
 
-Install perf on CachyOS/Arch (optional, richer counters):
-
-```bash
-pkexec pacman -S perf
-```
+`perf` is expected on this dev machine (`perf stat` used in `auto` mode). Install on Arch if missing: `pkexec pacman -S perf`.
 
 ## Quick start (agent)
 
